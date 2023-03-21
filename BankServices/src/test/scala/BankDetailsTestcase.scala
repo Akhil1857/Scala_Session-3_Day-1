@@ -34,4 +34,5 @@ class BankDetailsTestcase extends AnyFunSuite {
   test("deleteAccount should safely delete the account") {
     assert(BankService.deleteAccount(accountNumberBeforeOperations(1)) == true)
   }
+
 }

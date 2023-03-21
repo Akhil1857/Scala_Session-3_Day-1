@@ -36,6 +36,8 @@ class BankDetails {
             val newBalance = currentBalance - transactionAmount
             accounts += (accountNumber -> newBalance)
           }
+          else throw new IllegalArgumentException("Not sufficient Amount")
+        case _ => throw new IllegalArgumentException("Please Enter Valid Transaction type Debit/Credit")
       }
     })
     accounts
